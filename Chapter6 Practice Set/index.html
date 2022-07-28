@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Set 6 Flexbox</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      padding: 34px;
+    }
+
+    li {
+      list-style: none;
+      display: inline;
+      padding: 0 34px;
+      font-size: 3vw;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      display: flex;
+
+    }
+
+    .profile-picture img {
+      height: 100px;
+      width: 100px;
+      border-radius: 60px;
+      margin-left: 50px;
+    }
+
+    .left {
+      /* float: left; */
+      height: 80vh;
+      width: 30vw;
+      background-color: rgb(249, 249, 98);
+      font-size: 30px;
+    }
+    .middle {
+      background-color: black;
+      color: white;
+      font-size: 30px;
+      height: 80vh;
+      width: 30vw;
+      
+    }
+    .right {
+      background-color: rgb(167, 253, 230);
+      font-size: 30px;
+      height: 80vh;
+      width: 30vw;
+      /* float: right; */
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .bg-image img {
+      /* height: 20%; */
+      width: 100%;
+      border: 20px solid yellow;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="profile-picture"><img src="WalkingCat.gif" alt=""></div>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="first-image">
+    <div class="bg-image">
+      <img src="bg-image.jpg" alt="">
+    </div>
+
+
+  </div>
+  <div class="container">
+    <div class="left">Lorem ipsum dolor sit, amet      consectetur adipisicing elit. Reiciendis placeat voluptate dolor in, aperiam neque culpa debitis, veniam ratione vel quia saepe inventore perspiciatis laudantium tempora? Doloribus architecto adipisci obcaecati aperiam incidunt a eum.
+    </div>
+
+    <div class="middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quod quaerat fugiat voluptas consequuntur ducimus, soluta voluptates incidunt at quae nobis nemo quisquam officia!</div>
+
+    <div class="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vel ab, ipsa laudantium accusantium, quasi possimus est enim quam excepturi architecto voluptatum beatae.</div>
+  </div>
+</body>
+
+</html>
