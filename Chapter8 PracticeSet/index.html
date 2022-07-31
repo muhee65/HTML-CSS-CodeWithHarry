@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Bar with help of animation</title>
+  <style>
+    .progress {
+      background-color: rgb(250, 42, 42);
+      height: 3px;
+      animation-name: load;
+      animation-duration: 1s;
+      animation: load 2s ease-in-out 1s 1 normal forwards;
+      /* animation-timing-function: ;
+      animation-direction: normal;
+      animation-fill-mode: forwards; */
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      height: 122px;
+      background-color: black;
+    }
+
+    main {
+      height: 899px;
+      background-color: rgb(30, 0, 255);
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+    }
+
+    @keyframes load {
+      0% {
+        width: 0px;
+      }
+
+      20% {
+        width: 20%;
+      }
+
+      50% {
+        width: 50%;
+      }
+
+      75% {
+        width: 75%;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    img {
+      /* animation: rotate 10s linear infinite; */
+      display: block;
+      margin: auto;
+    }
+
+    .slider {
+      background-color: white;
+      height: 530px;
+      /* width: 100vw; */
+      overflow: hidden;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    .img1 {
+      transform: translate(-8vw);
+      animation: slide1 1s 2s forwards;
+    }
+
+    .img2 {
+      transform: translate(0vw);
+      animation: slide2 1s 2s forwards;
+    }
+
+    .img3 {
+      transform: translate(8vw);
+      animation: slide3 1s 2s forwards;
+
+    }
+
+    @keyframes slide1 {
+      0% {
+        transform: translate(-8vw);
+      }
+
+      100% {
+        transform: translate(85vw);
+      }
+    }
+
+    @keyframes slide2 {
+      0% {
+        transform: translate(0vw);
+      }
+
+      100% {
+        transform: translate(92vw);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="progress"></div>
+  <header></header>
+  <main>
+    <!-- <img src="double-dragon-png.png" alt="" width="700px"> -->
+
+    <div class="slider">
+      <img class="img1" src="https://source.unsplash.com/random/1600x900" alt="">
+      <img class="img2" src="https://source.unsplash.com/random/1600x901" alt="">
+      <img class="img3" src="https://source.unsplash.com/random/1600x902" alt="">
+
+    </div>
+  </main>
+</body>
+<script>
+
+</script>
+
+</html>
